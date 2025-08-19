@@ -30,8 +30,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: upload WAR artifact
-      uses: action/upload-artifact@v4
-      with:
-        name: addressbook-war
-        path: ./addressbook.war
+    
